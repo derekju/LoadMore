@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LoadMore</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="scripts/loadmore.js"></script>
+</head>
+<body>
+	<header>
+		<div class="title">LoadMore</div>
+		<div class="subtitle">An implementation of the scroll-to-load paradigm.</div>
+	</header>	
+	<div class="container">
+		<div class="sub-container"></div>
+	</div>
+	<footer>
+		&copy; 2013 Derek Ju
+	</footer>
+	<script type="text/javascript">
+		$(function () {
+			window.LoadMore.bind(
+				{
+					numToShow: 3
+				},
+				[
+					'http://www.simonstalenhag.se/bilder/fjarrhandske.jpg',
+					'http://www.simonstalenhag.se/bilder/varselklotet.jpg',
+					'http://www.simonstalenhag.se/bilder/maltemann.jpg',
+					'http://www.simonstalenhag.se/bilder/stormtappar.jpg',
+					'http://www.simonstalenhag.se/bilder/bona.jpg',
+					'http://www.simonstalenhag.se/bilder/gangmaskin.jpg',
+					'http://www.simonstalenhag.se/bilder/magnetbagge.jpg',
+					'http://www.simonstalenhag.se/bilder/lokskeppet3.jpg',
+					'http://www.simonstalenhag.se/bilder/bojmodul.jpg'			
+				],
+				$('.container'),
+				$('.sub-container')
+			);
+		});
+	</script>
+</body>
+</html>

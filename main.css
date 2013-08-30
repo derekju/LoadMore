@@ -1,0 +1,50 @@
+body {
+	font-family: HelveticaNeue-Light;
+}
+
+header {
+	margin-top: 50px;
+}
+
+.title {		
+	font-size: 72px;
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+	width: 600px;
+}
+
+.subtitle {
+	font-size: 24px;
+	margin: 0px auto 0;
+	text-align: center;
+	width: 600px;
+}
+
+.container {
+	border: 1px solid #eee;
+	border-radius: 5px;
+	height: 600px;
+	margin: 50px auto 50px;
+	overflow-y: scroll;
+	width: 600px;
+}
+
+.sub-container {
+	margin: 0 auto;
+	width: 550px;
+}
+
+.sub-container img {
+	border-radius: 5px;
+	display: block;
+	margin: 10px auto 10px;
+	width: 500px;
+	height: 400px;
+}
+
+footer {
+	color: #999;
+	margin: 0 auto;
+	text-align: center;
+}
